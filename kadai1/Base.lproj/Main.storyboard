@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fdX-qL-TWa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="x59-KL-EKr">
+            <objects>
+                <viewController id="fdX-qL-TWa" customClass="ViewController" customModule="kadai1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RgZ-mR-jMm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hal-Td-jC0">
+                                <rect key="frame" x="0.0" y="94" width="414" height="381.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kh7-h4-CAW">
+                                        <rect key="frame" x="167" y="0.0" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="aeh-Ju-oXJ"/>
+                                            <constraint firstAttribute="height" constant="30" id="xuv-XV-Yg5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-DR-yjQ">
+                                        <rect key="frame" x="167" y="60" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Crn-p2-udk"/>
+                                            <constraint firstAttribute="width" constant="80" id="rkq-fZ-4uH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9UV-I0-fxz">
+                                        <rect key="frame" x="167" y="120" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="TOf-ND-Ofi"/>
+                                            <constraint firstAttribute="width" constant="80" id="gPc-JL-Xgn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0F-jK-ZhM">
+                                        <rect key="frame" x="167" y="180" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LDy-9Q-Fj5"/>
+                                            <constraint firstAttribute="width" constant="80" id="g7v-ws-6kE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrS-UQ-ycZ">
+                                        <rect key="frame" x="167" y="240" width="80" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Yf5-Go-2w6"/>
+                                            <constraint firstAttribute="height" constant="30" id="fKy-2e-HZM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQc-9U-RAn">
+                                        <rect key="frame" x="173.5" y="300" width="67" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="calculateButton:" destination="fdX-qL-TWa" eventType="touchUpInside" id="ReT-ci-g9L"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czg-Z6-bc2">
+                                        <rect key="frame" x="186.5" y="361" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZtV-Ws-5tQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hal-Td-jC0" firstAttribute="top" secondItem="ZtV-Ws-5tQ" secondAttribute="top" constant="50" id="PZU-1C-NDy"/>
+                            <constraint firstItem="hal-Td-jC0" firstAttribute="leading" secondItem="ZtV-Ws-5tQ" secondAttribute="leading" id="YXJ-YQ-iER"/>
+                            <constraint firstItem="ZtV-Ws-5tQ" firstAttribute="trailing" secondItem="hal-Td-jC0" secondAttribute="trailing" id="zth-GY-6Zx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fifthTextField" destination="BrS-UQ-ycZ" id="xOU-27-Fh5"/>
+                        <outlet property="firstTextField" destination="Kh7-h4-CAW" id="bcT-2X-M1e"/>
+                        <outlet property="fourthTextField" destination="L0F-jK-ZhM" id="mtZ-11-yLi"/>
+                        <outlet property="resultLabel" destination="Czg-Z6-bc2" id="xIE-x2-7Dj"/>
+                        <outlet property="secondTextField" destination="1SQ-DR-yjQ" id="eQ3-k2-6iL"/>
+                        <outlet property="thirdTextField" destination="9UV-I0-fxz" id="rqg-Z1-G2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUW-Rd-9eS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
